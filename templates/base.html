@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}
+                Мой сайт
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body> 
+        <header>
+            <h1>Практическая работа №2</h1>
+            <div class="header_content">
+                {% block header_content %}                    
+                {% endblock %}
+            </div>
+        </header>
+        <div class="content">
+            {% block content %}
+                <h3>Здесь должен быть контент</h3>
+            {% endblock %}
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <br>
+            <hr>
+            <h4>Гильмутдинов Руслан</h4>
+            <a href="https://github.com/RussellMorryson" class="nav-link">Github</a>
+            <p>Все права защищены &copy;</p>      
+        </div>        
+    </footer>
+</html>

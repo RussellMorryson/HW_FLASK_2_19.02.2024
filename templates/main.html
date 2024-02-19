@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+    {% block title %}
+        Главная страница
+    {% endblock %}
+
+    {% block content %}
+        <h2>Введите имя и электронную почту</h2><br>
+        <form action="/in" method="post">            
+            <input type="text" name="name" placeholder="Имя"><br>
+            <input type="email" name="mail" placeholder="Электронная почта"><br>
+            <input type="submit" value="Войти">
+        </form>
+    {% endblock %}
